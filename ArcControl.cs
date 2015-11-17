@@ -3,9 +3,9 @@ using System.ComponentModel;
 using System.Drawing;
 using System.Windows.Forms;
 
-namespace CircularPlayer
+namespace ArcControl
 {
-    public partial class RoundProgress : Control
+    public partial class Arc : Control
     {
         private int _MaxValue;
         private int _MinValue;
@@ -184,7 +184,7 @@ namespace CircularPlayer
             set { _ShowText = value; Invalidate(); }
         }
         #endregion
-        public RoundProgress()
+        public Arc()
         {
             InitializeComponent();
             SetStyle(ControlStyles.SupportsTransparentBackColor, true);
